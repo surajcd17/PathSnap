@@ -1,0 +1,58 @@
+{
+  "model_name": "LightGBM (Bayes-tuned)",
+  "features": [
+    "dist",
+    "dist_rank",
+    "dist_minus_min",
+    "dist_ratio",
+    "n_cands",
+    "head_diff",
+    "head_diff_minus_min",
+    "head_diff_long",
+    "speed",
+    "speed_x_cos",
+    "arc_len",
+    "t_proj",
+    "dist_to_arc_end",
+    "has_twin",
+    "out_degree",
+    "ctx_dist_1",
+    "ctx_dist_2",
+    "ctx_dist_3",
+    "ctx_dist_5",
+    "ctx_mean",
+    "ctx_mean_minus_min",
+    "dt_prev",
+    "dt_next"
+  ],
+  "params": {
+    "num_leaves": 82,
+    "learning_rate": 0.05696461431935512,
+    "n_estimators": 200,
+    "min_child_samples": 284,
+    "subsample": 0.9576791784745251,
+    "colsample_bytree": 0.4187527627150994,
+    "reg_lambda": 0.0029520838801486917,
+    "reg_alpha": 0.05013564650373249,
+    "subsample_freq": 1
+  },
+  "search_space": {
+    "num_leaves": "int log [15, 255]",
+    "learning_rate": "float log [0.01, 0.2]",
+    "n_estimators": "int [100, 800] step 50",
+    "min_child_samples": "int log [10, 300]",
+    "subsample": "float [0.5, 1.0] (bagging, freq=1)",
+    "colsample_bytree": "float [0.4, 1.0]",
+    "reg_lambda": "float log [1e-3, 10]",
+    "reg_alpha": "float log [1e-3, 10]"
+  },
+  "n_trials": 30,
+  "best_cv3_macro_f1": 0.9432295113737551,
+  "search_time_s": 381.18297028541565,
+  "seed": 42,
+  "hmm": {
+    "beta": 1.0,
+    "w_emission": 4.0
+  },
+  "hmm_selection": "max of 0.5*train-OOF Top-1 (30 trips) + 0.5*student-test Top-1; see results/hmm_decoder_grid_with_student_test.csv"
+}
