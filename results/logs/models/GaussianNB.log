@@ -1,0 +1,16 @@
+# GaussianNB - extracted from results/logs/03_train_models.log (single run of scripts/03_train_models.py, seed 42)
+# Re-run just this model with: python scripts/models/train_gaussian_nb.py
+
+=== GaussianNB
+  fold 0: F1=0.8433 top1=0.8669 ll=0.7533 fit=0.7s
+  fold 1: F1=0.8508 top1=0.8956 ll=0.5693 fit=0.7s
+  fold 2: F1=0.8207 top1=0.8474 ll=0.7208 fit=0.6s
+  fold 3: F1=0.8088 top1=0.7957 ll=0.7915 fit=0.7s
+  fold 4: F1=0.8236 top1=0.8502 ll=1.1668 fit=0.6s
+{'model': 'GaussianNB', 'family': 'Probabilistic (generative)', 'config': 'StandardScaler + Gaussian Naive Bayes, var_smoothing=1e-9', 'cv_macro_f1': np.float64(0.8294), 'cv_macro_f1_std': np.float64(0.0172), 'cv_top1': np.float64(0.8512), 'cv_top1_std': np.float64(0.0365), 'cv_log_loss': np.float64(0.8004), 'train_macro_f1': 0.8317, 'train_log_loss': 0.7756, 'st_top1': 0.8495, 'st_macro_f1': 0.8281, 'st_precision': 0.5902, 'st_recall': 0.9237, 'st_accuracy': 0.8957, 'st_log_loss': 0.7683, 'st_continuity': 0.9786, 'train_time_s': 0.6971, 'mean_fold_fit_s': 0.6746, 'inference_ms_per_1k_cands': 0.4601, 'inference_s_student_test': 0.0605, 'fit_rows': 1199634}
+
+# Summary (from results/model_comparison.csv)
+# CV (5-fold GroupKFold, train): macro F1 0.8294 +/- 0.0172 | Top-1 0.8512 +/- 0.0365 | log loss 0.8004
+# Train (fit rows): macro F1 0.8317 | log loss 0.7756 | rows used 1,199,634
+# Student-test: Top-1 0.8495 | macro F1 0.8281 | precision 0.5902 | recall 0.9237 | log loss 0.7683 | continuity 0.9786
+# Time: refit 0.70s | mean fold fit 0.67s | inference 0.46 ms per 1k candidates (0.06s for student-test)
