@@ -1,0 +1,16 @@
+# LightGBM - extracted from results/logs/03_train_models.log (single run of scripts/03_train_models.py, seed 42)
+# Re-run just this model with: python scripts/models/train_lightgbm.py
+
+=== LightGBM
+  fold 0: F1=0.9358 top1=0.8970 ll=0.1037 fit=8.7s
+  fold 1: F1=0.9573 top1=0.9304 ll=0.0530 fit=6.6s
+  fold 2: F1=0.9387 top1=0.8990 ll=0.0757 fit=8.5s
+  fold 3: F1=0.9218 top1=0.8572 ll=0.0995 fit=6.4s
+  fold 4: F1=0.9486 top1=0.9264 ll=0.0819 fit=6.1s
+{'model': 'LightGBM', 'family': 'Gradient boosting', 'config': '400 trees, lr=0.05, num_leaves=63, default regularisation', 'cv_macro_f1': np.float64(0.9405), 'cv_macro_f1_std': np.float64(0.0134), 'cv_top1': np.float64(0.902), 'cv_top1_std': np.float64(0.0293), 'cv_log_loss': np.float64(0.0828), 'train_macro_f1': 0.9658, 'train_log_loss': 0.0478, 'st_top1': 0.9106, 'st_macro_f1': 0.9436, 'st_precision': 0.9139, 'st_recall': 0.8932, 'st_accuracy': 0.9722, 'st_log_loss': 0.0747, 'st_continuity': 0.9839, 'train_time_s': 7.3441, 'mean_fold_fit_s': 7.2238, 'inference_ms_per_1k_cands': 3.1272, 'inference_s_student_test': 0.4114, 'fit_rows': 1199634}
+
+# Summary (from results/model_comparison.csv)
+# CV (5-fold GroupKFold, train): macro F1 0.9405 +/- 0.0134 | Top-1 0.9020 +/- 0.0293 | log loss 0.0828
+# Train (fit rows): macro F1 0.9658 | log loss 0.0478 | rows used 1,199,634
+# Student-test: Top-1 0.9106 | macro F1 0.9436 | precision 0.9139 | recall 0.8932 | log loss 0.0747 | continuity 0.9839
+# Time: refit 7.34s | mean fold fit 7.22s | inference 3.13 ms per 1k candidates (0.41s for student-test)
