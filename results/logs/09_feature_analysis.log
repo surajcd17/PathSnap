@@ -1,0 +1,27 @@
+   partition  n_obs  n_rows  n_rows_reliable  frac_reliable_obs  cands_per_obs_mean  cands_per_obs_median  positive_rate  candidate_miss_rate  nearest_is_true
+       train 208417 1246442          1199634             0.8884              6.4793                   6.0         0.1533               0.0065           0.5587
+student_test  19160  131544           131484             0.9986              6.8721                   8.0         0.1453               0.0012           0.5403
+                group             feature   auc  higher_means_true  median_true  median_wrong
+             distance      dist_minus_min 0.899              False        0.000        13.634
+             distance           dist_rank 0.896              False        0.000         4.000
+     temporal context  ctx_mean_minus_min 0.887              False        0.000        14.016
+             distance          dist_ratio 0.887              False        0.835         3.174
+     temporal context          ctx_dist_1 0.860              False        5.955        21.521
+arc geometry/topology     dist_to_arc_end 0.857               True       20.543         0.000
+        heading/speed      head_diff_long 0.852              False        4.266        99.733
+             distance                dist 0.846              False        4.882        19.501
+     temporal context          ctx_dist_2 0.829              False        7.545        25.534
+        heading/speed head_diff_minus_min 0.822              False        0.283        85.752
+        heading/speed           head_diff 0.800              False       13.384       101.090
+        heading/speed         speed_x_cos 0.796               True        8.920        -0.809
+     temporal context            ctx_mean 0.787              False        9.960        30.149
+     temporal context          ctx_dist_3 0.783              False        9.469        30.177
+arc geometry/topology             arc_len 0.709               True       98.942        40.523
+     temporal context          ctx_dist_5 0.704              False       15.380        39.584
+             distance             n_cands 0.667              False        6.000        10.000
+arc geometry/topology            has_twin 0.530              False        1.000         1.000
+        heading/speed               speed 0.528               True        9.629         8.861
+arc geometry/topology          out_degree 0.522              False        2.000         2.000
+arc geometry/topology              t_proj 0.502               True        0.502         0.488
+     temporal context             dt_prev 0.501              False        1.000         1.000
+     temporal context             dt_next 0.501              False        1.000         1.000

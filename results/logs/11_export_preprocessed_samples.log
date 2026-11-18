@@ -1,0 +1,6 @@
+   partition  trips  raw_gps_rows  clean_gps_rows  reliable_gps_rows  candidate_rows  candidate_rows_reliable  features_per_row  positive_rows_y1  candidate_miss_rate
+       train     80        208417          208417             185149         1246442                  1199634                23            185016             0.006535
+student_test     10         19160           19160              19133          131544                   131484                23             19110             0.001202
+
+trip 00000003 (train): 821 raw rows -> 821 clean rows -> 7754 candidate rows
+written to C:\Users\syedh\Desktop\ML Hackathon\results\preprocessed_samples
