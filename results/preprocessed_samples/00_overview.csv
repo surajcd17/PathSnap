@@ -1,0 +1,3 @@
+partition,trips,raw_gps_rows,clean_gps_rows,reliable_gps_rows,candidate_rows,candidate_rows_reliable,features_per_row,positive_rows_y1,candidate_miss_rate
+train,80,208417,208417,185149,1246442,1199634,23,185016,0.006535276993124506
+student_test,10,19160,19160,19133,131544,131484,23,19110,0.0012021115350441258
