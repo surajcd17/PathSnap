@@ -1,0 +1,16 @@
+# RandomForest - extracted from results/logs/03_train_models.log (single run of scripts/03_train_models.py, seed 42)
+# Re-run just this model with: python scripts/models/train_random_forest.py
+
+=== RandomForest
+  fold 0: F1=0.9365 top1=0.8976 ll=0.0957 fit=24.3s
+  fold 1: F1=0.9589 top1=0.9315 ll=0.0537 fit=25.8s
+  fold 2: F1=0.9375 top1=0.8961 ll=0.0785 fit=28.5s
+  fold 3: F1=0.9225 top1=0.8570 ll=0.1000 fit=25.5s
+  fold 4: F1=0.9471 top1=0.9251 ll=0.0821 fit=25.8s
+{'model': 'RandomForest', 'family': 'Tree ensemble (bagging)', 'config': '200 trees, max_features=sqrt, min_samples_leaf=5; fit on 300k-row subsample', 'cv_macro_f1': np.float64(0.9405), 'cv_macro_f1_std': np.float64(0.0135), 'cv_top1': np.float64(0.9015), 'cv_top1_std': np.float64(0.0295), 'cv_log_loss': np.float64(0.082), 'train_macro_f1': 0.9725, 'train_log_loss': 0.0434, 'st_top1': 0.8981, 'st_macro_f1': 0.9384, 'st_precision': 0.9102, 'st_recall': 0.8792, 'st_accuracy': 0.9698, 'st_log_loss': 0.0769, 'st_continuity': 0.9837, 'train_time_s': 24.7717, 'mean_fold_fit_s': 25.9635, 'inference_ms_per_1k_cands': 1.7256, 'inference_s_student_test': 0.227, 'fit_rows': 300000}
+
+# Summary (from results/model_comparison.csv)
+# CV (5-fold GroupKFold, train): macro F1 0.9405 +/- 0.0135 | Top-1 0.9015 +/- 0.0295 | log loss 0.0820
+# Train (fit rows): macro F1 0.9725 | log loss 0.0434 | rows used 300,000
+# Student-test: Top-1 0.8981 | macro F1 0.9384 | precision 0.9102 | recall 0.8792 | log loss 0.0769 | continuity 0.9837
+# Time: refit 24.77s | mean fold fit 25.96s | inference 1.73 ms per 1k candidates (0.23s for student-test)

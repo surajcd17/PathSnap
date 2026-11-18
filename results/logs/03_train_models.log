@@ -1,0 +1,43 @@
+=== LogisticRegression
+  fold 0: F1=0.9186 top1=0.8850 ll=0.1329 fit=1.9s
+  fold 1: F1=0.9311 top1=0.9138 ll=0.0962 fit=2.0s
+  fold 2: F1=0.9024 top1=0.8714 ll=0.1256 fit=2.3s
+  fold 3: F1=0.8947 top1=0.8346 ll=0.1338 fit=1.9s
+  fold 4: F1=0.9239 top1=0.9136 ll=0.1338 fit=2.2s
+{'model': 'LogisticRegression', 'family': 'Linear / probabilistic', 'config': 'StandardScaler + L2 logistic regression, C=1.0, lbfgs, max_iter=1000', 'cv_macro_f1': np.float64(0.9141), 'cv_macro_f1_std': np.float64(0.0152), 'cv_top1': np.float64(0.8837), 'cv_top1_std': np.float64(0.033), 'cv_log_loss': np.float64(0.1244), 'train_macro_f1': 0.9176, 'train_log_loss': 0.1214, 'st_top1': 0.8763, 'st_macro_f1': 0.9124, 'st_precision': 0.8492, 'st_recall': 0.8512, 'st_accuracy': 0.9564, 'st_log_loss': 0.1136, 'st_continuity': 0.9813, 'train_time_s': 2.4119, 'mean_fold_fit_s': 2.0741, 'inference_ms_per_1k_cands': 0.1788, 'inference_s_student_test': 0.0235, 'fit_rows': 1199634}
+=== GaussianNB
+  fold 0: F1=0.8433 top1=0.8669 ll=0.7533 fit=0.7s
+  fold 1: F1=0.8508 top1=0.8956 ll=0.5693 fit=0.7s
+  fold 2: F1=0.8207 top1=0.8474 ll=0.7208 fit=0.6s
+  fold 3: F1=0.8088 top1=0.7957 ll=0.7915 fit=0.7s
+  fold 4: F1=0.8236 top1=0.8502 ll=1.1668 fit=0.6s
+{'model': 'GaussianNB', 'family': 'Probabilistic (generative)', 'config': 'StandardScaler + Gaussian Naive Bayes, var_smoothing=1e-9', 'cv_macro_f1': np.float64(0.8294), 'cv_macro_f1_std': np.float64(0.0172), 'cv_top1': np.float64(0.8512), 'cv_top1_std': np.float64(0.0365), 'cv_log_loss': np.float64(0.8004), 'train_macro_f1': 0.8317, 'train_log_loss': 0.7756, 'st_top1': 0.8495, 'st_macro_f1': 0.8281, 'st_precision': 0.5902, 'st_recall': 0.9237, 'st_accuracy': 0.8957, 'st_log_loss': 0.7683, 'st_continuity': 0.9786, 'train_time_s': 0.6971, 'mean_fold_fit_s': 0.6746, 'inference_ms_per_1k_cands': 0.4601, 'inference_s_student_test': 0.0605, 'fit_rows': 1199634}
+=== KNN
+  fold 0: F1=0.9203 top1=0.8844 ll=0.1816 fit=0.0s
+  fold 1: F1=0.9413 top1=0.9143 ll=0.0911 fit=0.0s
+  fold 2: F1=0.9119 top1=0.8699 ll=0.1488 fit=0.0s
+  fold 3: F1=0.8956 top1=0.8327 ll=0.1666 fit=0.0s
+  fold 4: F1=0.9268 top1=0.9027 ll=0.1611 fit=0.0s
+{'model': 'KNN', 'family': 'Instance-based', 'config': 'StandardScaler + KNN k=25, distance-weighted, euclidean; fit on 60k-row subsample', 'cv_macro_f1': np.float64(0.9192), 'cv_macro_f1_std': np.float64(0.017), 'cv_top1': np.float64(0.8808), 'cv_top1_std': np.float64(0.0318), 'cv_log_loss': np.float64(0.1498), 'train_macro_f1': 1.0, 'train_log_loss': 0.0, 'st_top1': 0.8771, 'st_macro_f1': 0.9227, 'st_precision': 0.8767, 'st_recall': 0.8588, 'st_accuracy': 0.9619, 'st_log_loss': 0.1317, 'st_continuity': 0.977, 'train_time_s': 0.028, 'mean_fold_fit_s': 0.0283, 'inference_ms_per_1k_cands': 31.234, 'inference_s_student_test': 4.1086, 'fit_rows': 60000}
+=== RandomForest
+  fold 0: F1=0.9365 top1=0.8976 ll=0.0957 fit=24.3s
+  fold 1: F1=0.9589 top1=0.9315 ll=0.0537 fit=25.8s
+  fold 2: F1=0.9375 top1=0.8961 ll=0.0785 fit=28.5s
+  fold 3: F1=0.9225 top1=0.8570 ll=0.1000 fit=25.5s
+  fold 4: F1=0.9471 top1=0.9251 ll=0.0821 fit=25.8s
+{'model': 'RandomForest', 'family': 'Tree ensemble (bagging)', 'config': '200 trees, max_features=sqrt, min_samples_leaf=5; fit on 300k-row subsample', 'cv_macro_f1': np.float64(0.9405), 'cv_macro_f1_std': np.float64(0.0135), 'cv_top1': np.float64(0.9015), 'cv_top1_std': np.float64(0.0295), 'cv_log_loss': np.float64(0.082), 'train_macro_f1': 0.9725, 'train_log_loss': 0.0434, 'st_top1': 0.8981, 'st_macro_f1': 0.9384, 'st_precision': 0.9102, 'st_recall': 0.8792, 'st_accuracy': 0.9698, 'st_log_loss': 0.0769, 'st_continuity': 0.9837, 'train_time_s': 24.7717, 'mean_fold_fit_s': 25.9635, 'inference_ms_per_1k_cands': 1.7256, 'inference_s_student_test': 0.227, 'fit_rows': 300000}
+=== LightGBM
+  fold 0: F1=0.9358 top1=0.8970 ll=0.1037 fit=8.7s
+  fold 1: F1=0.9573 top1=0.9304 ll=0.0530 fit=6.6s
+  fold 2: F1=0.9387 top1=0.8990 ll=0.0757 fit=8.5s
+  fold 3: F1=0.9218 top1=0.8572 ll=0.0995 fit=6.4s
+  fold 4: F1=0.9486 top1=0.9264 ll=0.0819 fit=6.1s
+{'model': 'LightGBM', 'family': 'Gradient boosting', 'config': '400 trees, lr=0.05, num_leaves=63, default regularisation', 'cv_macro_f1': np.float64(0.9405), 'cv_macro_f1_std': np.float64(0.0134), 'cv_top1': np.float64(0.902), 'cv_top1_std': np.float64(0.0293), 'cv_log_loss': np.float64(0.0828), 'train_macro_f1': 0.9658, 'train_log_loss': 0.0478, 'st_top1': 0.9106, 'st_macro_f1': 0.9436, 'st_precision': 0.9139, 'st_recall': 0.8932, 'st_accuracy': 0.9722, 'st_log_loss': 0.0747, 'st_continuity': 0.9839, 'train_time_s': 7.3441, 'mean_fold_fit_s': 7.2238, 'inference_ms_per_1k_cands': 3.1272, 'inference_s_student_test': 0.4114, 'fit_rows': 1199634}
+=== MLP
+  fold 0: F1=0.9334 top1=0.8944 ll=0.1136 fit=27.9s
+  fold 1: F1=0.9502 top1=0.9221 ll=0.0634 fit=9.8s
+  fold 2: F1=0.9302 top1=0.8901 ll=0.0867 fit=16.7s
+  fold 3: F1=0.9148 top1=0.8476 ll=0.1069 fit=14.5s
+  fold 4: F1=0.9396 top1=0.9185 ll=0.0974 fit=18.8s
+{'model': 'MLP', 'family': 'Neural network', 'config': 'StandardScaler + MLP (64,32) ReLU, Adam lr=1e-3, alpha=1e-4, batch 512, early stopping; 300k-row subsample', 'cv_macro_f1': np.float64(0.9336), 'cv_macro_f1_std': np.float64(0.013), 'cv_top1': np.float64(0.8945), 'cv_top1_std': np.float64(0.0298), 'cv_log_loss': np.float64(0.0936), 'train_macro_f1': 0.9448, 'train_log_loss': 0.0753, 'st_top1': 0.8994, 'st_macro_f1': 0.9347, 'st_precision': 0.9056, 'st_recall': 0.8712, 'st_accuracy': 0.9681, 'st_log_loss': 0.081, 'st_continuity': 0.9855, 'train_time_s': 16.7487, 'mean_fold_fit_s': 17.5376, 'inference_ms_per_1k_cands': 0.4906, 'inference_s_student_test': 0.0645, 'fit_rows': 300000}
+saved C:\Users\syedh\Desktop\ML Hackathon\results\model_comparison.csv
