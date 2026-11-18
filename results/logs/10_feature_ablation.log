@@ -1,0 +1,12 @@
+dist_ratio        0.2456
+head_diff_long    0.1140
+speed             0.0829
+speed_x_cos       0.0790
+ctx_dist_5        0.0747
+out_degree        0.0725
+ctx_mean          0.0595
+t_proj            0.0563
+{'feature_set': 'G1 distance', 'n_features': 5, 'cv_top1': np.float64(0.554689583214558), 'cv_top1_std': np.float64(0.048373078047141777), 'cv_macro_f1': np.float64(0.7380870664867187), 'cv_log_loss': np.float64(0.24678225319434755)}
+{'feature_set': 'G2 + heading/speed', 'n_features': 10, 'cv_top1': np.float64(0.8774350463602774), 'cv_top1_std': np.float64(0.03513245466876769), 'cv_macro_f1': np.float64(0.9208872318473574), 'cv_log_loss': np.float64(0.11123746302238069)}
+{'feature_set': 'G3 + arc geometry/topology', 'n_features': 15, 'cv_top1': np.float64(0.8880194863372081), 'cv_top1_std': np.float64(0.03437024746754545), 'cv_macro_f1': np.float64(0.9333224833981928), 'cv_log_loss': np.float64(0.09461296407096134)}
+{'feature_set': 'G4 + temporal context', 'n_features': 23, 'cv_top1': np.float64(0.901995494429228), 'cv_top1_std': np.float64(0.02932687347596642), 'cv_macro_f1': np.float64(0.9404534049340627), 'cv_log_loss': np.float64(0.0827530876805406)}
