@@ -1,0 +1,51 @@
+2026-11-18 13:41:23,780 | INFO | Loaded model 'LightGBM (Bayes-tuned)' from C:\Users\syedh\Desktop\ML Hackathon\artifacts\model; serving trips from C:\Users\syedh\Desktop\ML Hackathon\data\evaluator\evaluator_test
+INFO:     Started server process [24280]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-11-18 13:41:24,591 | INFO | GET /health from 127.0.0.1 -> 200 (4 ms)
+INFO:     127.0.0.1:53657 - "GET /health HTTP/1.1" 200 OK
+2026-11-18 13:41:27,093 | INFO | GET /health from 127.0.0.1 -> 200 (3 ms)
+INFO:     127.0.0.1:53660 - "GET /health HTTP/1.1" 200 OK
+2026-11-18 13:41:29,154 | INFO | GET /trips from 127.0.0.1 -> 200 (9 ms)
+INFO:     127.0.0.1:53663 - "GET /trips HTTP/1.1" 200 OK
+2026-11-18 13:41:31,211 | INFO | [PREDICT] trip=00000015 received, running pipeline
+2026-11-18 13:41:32,225 | INFO | [RESULT] trip=00000015 obs=6854 | classifier top1=0.8425 | HMM top1=0.9142 macroF1=0.9492 continuity=0.9990 routeF1=0.8280 | 0.90s
+2026-11-18 13:41:32,301 | INFO | POST /predict from 127.0.0.1 -> 200 (1092 ms)
+INFO:     127.0.0.1:53665 - "POST /predict HTTP/1.1" 200 OK
+2026-11-18 13:41:34,370 | INFO | [PREDICT] trip=00000017 received, running pipeline
+2026-11-18 13:41:35,274 | INFO | [RESULT] trip=00000017 obs=1346 | classifier top1=0.9421 | HMM top1=0.9473 macroF1=0.9739 continuity=1.0000 routeF1=0.8444 | 0.81s
+2026-11-18 13:41:35,290 | INFO | POST /predict from 127.0.0.1 -> 200 (922 ms)
+INFO:     127.0.0.1:53667 - "POST /predict HTTP/1.1" 200 OK
+2026-11-18 13:41:37,326 | INFO | [PREDICT] trip=00000023 received, running pipeline
+2026-11-18 13:41:37,516 | INFO | [RESULT] trip=00000023 obs=458 | classifier top1=0.9432 | HMM top1=0.9585 macroF1=0.9752 continuity=1.0000 routeF1=0.8852 | 0.18s
+2026-11-18 13:41:37,521 | INFO | POST /predict from 127.0.0.1 -> 200 (196 ms)
+INFO:     127.0.0.1:53669 - "POST /predict HTTP/1.1" 200 OK
+2026-11-18 13:41:39,546 | INFO | [PREDICT] trip=00000030 received, running pipeline
+2026-11-18 13:41:39,907 | INFO | [RESULT] trip=00000030 obs=654 | classifier top1=0.8272 | HMM top1=0.8547 macroF1=0.9224 continuity=1.0000 routeF1=0.7966 | 0.33s
+2026-11-18 13:41:39,916 | INFO | POST /predict from 127.0.0.1 -> 200 (371 ms)
+INFO:     127.0.0.1:53671 - "POST /predict HTTP/1.1" 200 OK
+2026-11-18 13:41:41,942 | INFO | [PREDICT] trip=00000049 received, running pipeline
+2026-11-18 13:41:42,567 | INFO | [RESULT] trip=00000049 obs=2642 | classifier top1=0.9928 | HMM top1=1.0000 macroF1=1.0000 continuity=1.0000 routeF1=0.9814 | 0.51s
+2026-11-18 13:41:42,583 | INFO | POST /predict from 127.0.0.1 -> 200 (644 ms)
+INFO:     127.0.0.1:53673 - "POST /predict HTTP/1.1" 200 OK
+2026-11-18 13:41:44,651 | INFO | [PREDICT] trip=00000059 received, running pipeline
+2026-11-18 13:41:45,158 | INFO | [RESULT] trip=00000059 obs=1031 | classifier top1=0.9670 | HMM top1=0.9796 macroF1=0.9893 continuity=1.0000 routeF1=0.8610 | 0.46s
+2026-11-18 13:41:45,170 | INFO | POST /predict from 127.0.0.1 -> 200 (520 ms)
+INFO:     127.0.0.1:50262 - "POST /predict HTTP/1.1" 200 OK
+2026-11-18 13:41:47,210 | INFO | [PREDICT] trip=00000067 received, running pipeline
+2026-11-18 13:41:47,406 | INFO | [RESULT] trip=00000067 obs=916 | classifier top1=0.9683 | HMM top1=0.9705 macroF1=0.9824 continuity=1.0000 routeF1=0.9419 | 0.18s
+2026-11-18 13:41:47,412 | INFO | POST /predict from 127.0.0.1 -> 200 (204 ms)
+INFO:     127.0.0.1:50264 - "POST /predict HTTP/1.1" 200 OK
+2026-11-18 13:41:49,448 | INFO | [PREDICT] trip=00000073 received, running pipeline
+2026-11-18 13:41:49,852 | INFO | [RESULT] trip=00000073 obs=1144 | classifier top1=0.9834 | HMM top1=0.9886 macroF1=0.9937 continuity=1.0000 routeF1=0.9720 | 0.37s
+2026-11-18 13:41:49,861 | INFO | POST /predict from 127.0.0.1 -> 200 (415 ms)
+INFO:     127.0.0.1:50266 - "POST /predict HTTP/1.1" 200 OK
+2026-11-18 13:41:51,913 | INFO | [PREDICT] trip=00000087 received, running pipeline
+2026-11-18 13:41:52,471 | INFO | [RESULT] trip=00000087 obs=1399 | classifier top1=0.9635 | HMM top1=0.9964 macroF1=0.9979 continuity=1.0000 routeF1=0.9810 | 0.48s
+2026-11-18 13:41:52,485 | INFO | POST /predict from 127.0.0.1 -> 200 (575 ms)
+INFO:     127.0.0.1:50269 - "POST /predict HTTP/1.1" 200 OK
+2026-11-18 13:41:54,516 | INFO | [PREDICT] trip=00000094 received, running pipeline
+2026-11-18 13:41:55,449 | INFO | [RESULT] trip=00000094 obs=3230 | classifier top1=0.9498 | HMM top1=0.9625 macroF1=0.9785 continuity=1.0000 routeF1=0.9485 | 0.77s
+2026-11-18 13:41:55,471 | INFO | POST /predict from 127.0.0.1 -> 200 (958 ms)
+INFO:     127.0.0.1:50271 - "POST /predict HTTP/1.1" 200 OK

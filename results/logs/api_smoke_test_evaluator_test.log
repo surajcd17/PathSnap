@@ -1,0 +1,11 @@
+{'status': 'ok', 'model': 'LightGBM (Bayes-tuned)', 'n_trips': 10}
+00000015: obs= 6854  clf top1=0.8425  HMM top1=0.9142  cont=0.9990  routeF1=0.8280  3.15s
+00000017: obs= 1346  clf top1=0.9421  HMM top1=0.9473  cont=1.0000  routeF1=0.8444  2.99s
+00000023: obs=  458  clf top1=0.9432  HMM top1=0.9585  cont=1.0000  routeF1=0.8852  2.23s
+00000030: obs=  654  clf top1=0.8272  HMM top1=0.8547  cont=1.0000  routeF1=0.7966  2.39s
+00000049: obs= 2642  clf top1=0.9928  HMM top1=1.0000  cont=1.0000  routeF1=0.9814  2.67s
+00000059: obs= 1031  clf top1=0.9670  HMM top1=0.9796  cont=1.0000  routeF1=0.8610  2.58s
+00000067: obs=  916  clf top1=0.9683  HMM top1=0.9705  cont=1.0000  routeF1=0.9419  2.24s
+00000073: obs= 1144  clf top1=0.9834  HMM top1=0.9886  cont=1.0000  routeF1=0.9720  2.45s
+00000087: obs= 1399  clf top1=0.9635  HMM top1=0.9964  cont=1.0000  routeF1=0.9810  2.62s
+00000094: obs= 3230  clf top1=0.9498  HMM top1=0.9625  cont=1.0000  routeF1=0.9485  2.99s

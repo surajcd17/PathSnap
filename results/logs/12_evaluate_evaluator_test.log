@@ -1,0 +1,14 @@
+model: LightGBM (Bayes-tuned) | HMM beta=1.0 w_e=4.0 | trips: C:\Users\syedh\Desktop\ML Hackathon\data\evaluator\evaluator_test
+00000015: obs= 6854 reliable=0.997 miss=0.0004 | Top-1 clf 0.8425 -> HMM 0.9142 | continuity 0.9990 | route F1 0.8280 | 1.07s
+00000017: obs= 1346 reliable=1.000 miss=0.0134 | Top-1 clf 0.9421 -> HMM 0.9473 | continuity 1.0000 | route F1 0.8444 | 0.92s
+00000023: obs=  458 reliable=1.000 miss=0.0044 | Top-1 clf 0.9432 -> HMM 0.9585 | continuity 1.0000 | route F1 0.8852 | 0.20s
+00000030: obs=  654 reliable=1.000 miss=0.0153 | Top-1 clf 0.8272 -> HMM 0.8547 | continuity 1.0000 | route F1 0.7966 | 0.39s
+00000049: obs= 2642 reliable=1.000 miss=0.0000 | Top-1 clf 0.9928 -> HMM 1.0000 | continuity 1.0000 | route F1 0.9814 | 0.58s
+00000059: obs= 1031 reliable=1.000 miss=0.0029 | Top-1 clf 0.9670 -> HMM 0.9796 | continuity 1.0000 | route F1 0.8610 | 0.52s
+00000067: obs=  916 reliable=1.000 miss=0.0000 | Top-1 clf 0.9683 -> HMM 0.9705 | continuity 1.0000 | route F1 0.9419 | 0.21s
+00000073: obs= 1144 reliable=1.000 miss=0.0009 | Top-1 clf 0.9834 -> HMM 0.9886 | continuity 1.0000 | route F1 0.9720 | 0.38s
+00000087: obs= 1399 reliable=1.000 miss=0.0000 | Top-1 clf 0.9635 -> HMM 0.9964 | continuity 1.0000 | route F1 0.9810 | 0.56s
+00000094: obs= 3230 reliable=1.000 miss=0.0003 | Top-1 clf 0.9498 -> HMM 0.9625 | continuity 1.0000 | route F1 0.9485 | 0.93s
+
+ALL: Top-1 classifier 0.9182 -> HMM 0.9513 | macro F1 0.9524 -> 0.9720 | continuity 0.9947 -> 0.9996 | route F1 0.8398 -> 0.8962 | 5.8s total
+saved C:\Users\syedh\Desktop\ML Hackathon\results\evaluator_test_results.csv
